@@ -83,7 +83,7 @@ $(document).ready(function() {
                 '/completed-courseware',
                 {
                     coursewareInfo: {
-                        coursewareHash: passedCoursewareHash
+                        coursewareHash: passedCoursewareHash || null
                     }
                 },
                 function(res) {
@@ -92,7 +92,7 @@ $(document).ready(function() {
                     }
                 })
         }
-    })
+    });
 
     $('.all-challenges').on('click', function() {
         $('#all-challenges-dialog').modal('show');
