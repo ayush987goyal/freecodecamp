@@ -2626,7 +2626,7 @@
   {
     "_id": "bd7123c9c442eddfaeb5bdef",
     "name": "Define Your Name",
-    "difficulty": "9.98",
+    "difficulty": "9.9801",
     "description": [
       "Set the value of <code>myName</code> to your name by typing your name in quotes.",
       "Currently <code>myName</code> is empty. Type in your name and hit the submit button.",
@@ -2646,7 +2646,7 @@
   {
     "_id": "bd7123c9c443eddfaeb5bdef",
     "name": "Start Using Variables",
-    "difficulty": "9.98",
+    "difficulty": "9.9802",
     "description": [
       "Now, use the <code>var</code> keyword to create a <code>variable</code> called <code>myName</code>. Set its value to your name.",
       "<code>Variables</code> are used to store values.",
@@ -2667,7 +2667,7 @@
   {
     "_id": "bd7123c9c444eddfaeb5bdef",
     "name": "Define Your First and Last Name",
-    "difficulty": "9.98",
+    "difficulty": "9.9803",
     "description": [
       "Now, use the <code>var</code> keyword to create a <code>variable</code> called <code>myFirstName</code> and set its value to your first name. Then set a variable called <code>myLastName</code> to your last name.",
       "<code>Variables</code> are used to store values.",
@@ -2689,12 +2689,10 @@
     "challengeType": 1
   },
 
-
-
   {
     "_id": "bd7123c9c445eddfaeb5bdef",
     "name": "Combine Two Strings into One String",
-    "difficulty": "9.98",
+    "difficulty": "9.9804",
     "description": [
       "Make a variable called <code>myName</code> by adding the string of your first name to the string of your last name.",
       "Strings can be combined in a process called <code>concatenation</code>.",
@@ -2718,7 +2716,7 @@
   {
     "_id": "bd7123c9c446eddfaeb5bdef",
     "name": "Combine Two Variables into One Variable",
-    "difficulty": "9.98",
+    "difficulty": "9.9805",
     "description": [
       "Make the variables <code>myFirstName</code>, <code>myLastName</code>, and <code>myFullName</code>. Concatenate my <code>myFirstName</code> to <code>myLastName</code> to create <code>myFullName</code>.",
       "Strings can be combined in a process called <code>concatenation</code>.",
@@ -2745,7 +2743,7 @@
   {
     "_id": "bd7123c9c447eddfaeb5bdef",
     "name": "Concatenate Both Variables and Strings into the Same Variable",
-    "difficulty": "9.98",
+    "difficulty": "9.9806",
     "description": [
       "Make the variables <code>myFirstName</code>, <code>myLastName</code>, and <code>myFullName</code>. Concatenate my <code>myFirstName</code> to <code>myLastName</code> to create <code>myFullName</code>, but this time add the space as a separate string, not as part of <code>myFirstName</code> or <code>myLastName</code>.",
       "Strings can be combined in a process called <code>concatenation</code>.",
@@ -2770,52 +2768,33 @@
 
   {
     "_id": "bd7123c9c448eddfaeb5bdef",
-    "name": "Check the Length of a String",
-    "difficulty": "9.98",
+    "name": "Check the Length Property of a String Variable",
+    "difficulty": "9.9809",
     "description": [
-      "Use <code>length</code> to count the number of characters in \"FreeCodeCamp\"!",
-      "All strings have a <code>length</code> property. You can use this property to find out how many characters are in the string. We can call this property by adding a <code>.length</code> at the end of a string.",
-      "Look at the <code>\"FreeCodeCamp\".length</code> example if you get stuck."
+      "Use the <code>.length</code> property to count the number of characters in value variable.",
+      "For example, if we created a variable <code>var firstName = \"Julie\"</code>, we could find out how long the string \"Julie\" is by using the <code>firstName.length</code> property"
     ],
     "tests": [
-      "expect(value).to.equal(12);"
+      "expect(lastNameLength).to.equal(4);"
     ],
     "challengeSeed": [
-      "// ignore this for now",
-      "function returnValue(value) {",
-      "  return value;",
+      "var firstName = \"Madeline\";",
+      "",
+      "var firstNameLength = firstName.length;",
+      "",
+      "var lastName = \"Chen\";",
+      "",
+      "var lastNameLength = lastName;",
+      "",
+      "",
+      "",
+      "// You can ignore this.",
+      "// We use this to show you the value of your variable in your output box.",
+      "// We'll learn about functions soon.",
+      "function returnValue(lastNameLength) {",
+      "  return lastNameLength;",
       "}",
-      "",
-      "// add your code here",
-      "var value = \"FreeCodeCamp\";",
-      "",
-      "// ignore this for now",
-      "returnValue(value);",
-      ""
-    ],
-    "challengeType": 1
-  },
-
-  {
-    "_id": "bd7123c9c448eddfaeb5bdef",
-    "name": "Check the Length of a String",
-    "difficulty": "9.98",
-    "description": [
-      "Let's count the number of characters in your name! All strings have a <code>length</code> property. You can use this property to find out how many characters are in the string. We can call this property by adding a <code>.length</code> at the end of a string.",
-      "Look at the <code>\"FreeCodeCamp\".length</code> example if you get stuck."
-    ],
-    "tests": [
-      ""
-    ],
-    "challengeSeed": [
-      "// You can ignore this function for now",
-      "print = function(output) {",
-      "  return output;",
-      "};",
-      "",
-      "print(\"FreeCodeCamp\".length);",
-      "print(\"\");",
-      ""
+      "returnValue(lastNameLength);"
     ],
     "challengeType": 1
   },
@@ -2823,30 +2802,32 @@
   {
     "_id": "bd7123c9c449eddfaeb5bdef",
     "name": "Use Bracket Notation to Find the First Character in a String",
-    "difficulty": "9.98",
+    "difficulty": "9.9810",
     "description": [
       "Use <code>bracket notation</code> to find the first character in a string.",
       "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string. For example, the character at index 0 in the word \"code\" is \"c\". You can get this value by doing <code>\"code\"[0]</code>.",
       "Note that the string <code>\"FreeCodeCamp\"</code> has already been assigned to the variable <code>someString</code>, so you just need to use bracket notation on someString."
     ],
     "tests": [
-      "expect(someString).to.equal('F');"
+      "expect(firstLetterOfLastName).to.equal('C');"
     ],
     "challengeSeed": [
-      "// ignore this for now",
-      "function returnValue(value) {",
-      "  return value;",
+      "var firstName = \"Madeline\";",
+      "",
+      "var firstLetterOfFirstName = firstName[0];",
+      "",
+      "var lastName = \"Chen\";",
+      "",
+      "var firstLetterOfLastName = lastName;",
+      "",
+      "",
+      "// You can ignore this.",
+      "// We use this to show you the value of your variable in your output box.",
+      "// We'll learn about functions soon.",
+      "function returnValue(firstLetterOfLastName) {",
+      "  return firstLetterOfLastName;",
       "}",
-      "",
-      "var someString = \"FreeCodeCamp\";",
-      "//Example: var anotherString = \"code\"",
-      "//anotherString[0] = \"c\"",
-      "",
-      "// Enter your code here:",
-      "var value = someString;",
-      "",
-      "// ignore this for now",
-      "returnValue(value);"
+      "returnValue(firstLetterOfLastName);"
     ],
     "challengeType": 1
   },
@@ -2854,7 +2835,7 @@
   {
     "_id": "bd7123c9c450eddfaeb5bdef",
     "name": "Use Bracket Notation to Find the Last Character in a String",
-    "difficulty": "9.98",
+    "difficulty": "9.9811",
     "description": [
       "Use <code>bracket notation</code> to find the last character in a string.",
       "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string. To get the last character of the string \"code\", you would use index -1. You can get this value by doing <code>\"code\"[-1]</code>.",
