@@ -189,7 +189,7 @@
       "expect($('h2')).to.have.css('color', '#0000ff');"
     ],
     "challengeSeed": [
-      "<h1>hello world</h1>", 
+      "<h1>hello world</h1>",
       "<h2>cat photo app</h2>",
       "<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
     ],
@@ -2771,8 +2771,8 @@
     "name": "Check the Length Property of a String Variable",
     "difficulty": "9.9809",
     "description": [
-      "Use the <code>.length</code> property to count the number of characters in value variable.",
-      "For example, if we created a variable <code>var firstName = \"Julie\"</code>, we could find out how long the string \"Julie\" is by using the <code>firstName.length</code> property"
+      "Use the <code>.length</code> property to count the number of characters in the <code>lastNameLength</code> variable.",
+      "For example, if we created a variable <code>var firstName = \"Julie\"</code>, we could find out how long the string \"Julie\" is by using the <code>firstName.length</code> property."
     ],
     "tests": [
       "expect(lastNameLength).to.equal(4);"
@@ -2800,13 +2800,15 @@
   },
 
   {
-    "_id": "bd7123c9c449eddfaeb5bdef",
+    "_id": "bd7123c9c549eddfaeb5bdef",
     "name": "Use Bracket Notation to Find the First Character in a String",
     "difficulty": "9.9810",
     "description": [
-      "Use <code>bracket notation</code> to find the first character in a string.",
-      "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string. For example, the character at index 0 in the word \"code\" is \"c\". You can get this value by doing <code>\"code\"[0]</code>.",
-      "Note that the string <code>\"FreeCodeCamp\"</code> has already been assigned to the variable <code>someString</code>, so you just need to use bracket notation on someString."
+      "Use <code>bracket notation</code> to find the first character in a the <code>firstLetterOfLastName</code> variable.",
+      "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string.",
+      "Computers don't start counting at 1 like humans do. They start at 0.",
+      "For example, the character at index 0 in the word \"Julie\" is \"J\". So if <code>var firstName = \"Julie\"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.",
+      "Try looking at the <code>firstLetterOfFirstName</code> variable declaration if you get stuck."
     ],
     "tests": [
       "expect(firstLetterOfLastName).to.equal('C');"
@@ -2834,29 +2836,105 @@
 
   {
     "_id": "bd7123c9c450eddfaeb5bdef",
-    "name": "Use Bracket Notation to Find the Last Character in a String",
+    "name": "Use Bracket Notation to Find the Nth Character in a String",
     "difficulty": "9.9811",
     "description": [
-      "Use <code>bracket notation</code> to find the last character in a string.",
-      "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string. To get the last character of the string \"code\", you would use index -1. You can get this value by doing <code>\"code\"[-1]</code>.",
-      "Note that the string <code>\"FreeCodeCamp\"</code> has already been assigned to the variable <code>someString</code>, so you just need to use bracket notation on someString."
+      "Use <code>bracket notation</code> to find the 3rd character in the <code>lastName</code> variable.",
+      "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string.",
+      "Computers don't start counting at 1 like humans do. They start at 0.",
+      "For example, the character at index 0 in the word \"Julie\" is \"J\". So if <code>var firstName = \"Julie\"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.",
+      "Try looking at the <code>secondLetterOfFirstName</code> variable declaration if you get stuck."
     ],
     "tests": [
-      ""
+      "expect(thirdLetterOfLastName).to.equal('e');"
     ],
     "challengeSeed": [
-      "// ignore this for now",
-      "function returnValue(value) {",
-      "  return value;",
+      "var firstName = \"Madeline\";",
+      "",
+      "var secondLetterOfFirstName = firstName[1];",
+      "",
+      "var lastName = \"Chen\";",
+      "",
+      "var thirdLetterOfLastName = lastName;",
+      "",
+      "",
+      "// You can ignore this.",
+      "// We use this to show you the value of your variable in your output box.",
+      "// We'll learn about functions soon.",
+      "function returnValue(thirdLetterOfLastName) {",
+      "  return thirdLetterOfLastName;",
       "}",
+      "returnValue(thirdLetterOfLastName);"
+    ],
+    "challengeType": 1
+  },
+
+  {
+    "_id": "bd7123c9c451eddfaeb5bdef",
+    "name": "Use Bracket Notation to Find the Last Character in a String",
+    "difficulty": "9.9812",
+    "description": [
+      "Use <code>bracket notation</code> to find the last character in the <code>lastName</code> variable.",
+      "For example, the character at index 0 in the word \"Julie\" is \"J\". So if <code>var firstName = \"Julie\"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.",
+      "In order to get the last letter of a string, you can subtract one from the string's length.",
+      "For example, if <code>var firstName = \"Julie\"</code>, you can get the value of the last letter of the string by using <code>firstName[firstName.length - 1]</code>.",
+      "Try looking at the <code>lastLetterOfLastName</code> variable declaration if you get stuck."
+    ],
+    "tests": [
+      "expect(lastLetterOfLastName).to.equal('n');"
+    ],
+    "challengeSeed": [
+      "var firstName = \"Madeline\";",
       "",
-      "var someString = \"FreeCodeCamp\";",
+      "var lastLetterOfFirstName = firstName[firstName.length - 1];",
       "",
-      "// Enter your code here:",
-      "var value = someString;",
+      "var lastName = \"Chen\";",
       "",
-      "// ignore this for now",
-      "returnValue(value);"
+      "var lastLetterOfLastName = lastName;",
+      "",
+      "",
+      "// You can ignore this.",
+      "// We use this to show you the value of your variable in your output box.",
+      "// We'll learn about functions soon.",
+      "function returnValue(lastLetterOfLastName) {",
+      "  return lastLetterOfLastName;",
+      "}",
+      "returnValue(lastLetterOfLastName);"
+    ],
+    "challengeType": 1
+  },
+
+  {
+    "_id": "bd7123c9c452eddfaeb5bdef",
+    "name": "Use Bracket Notation to Find the Nth to Last Character in a String",
+    "difficulty": "9.9813",
+    "description": [
+      "Use <code>bracket notation</code> to find the second-to-last character in the <code>lastName</code> variable.",
+      "For example, the character at index 0 in the word \"Julie\" is \"J\". So if <code>var firstName = \"Julie\"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.",
+      "In order to get the last letter of a string, you can subtract one from the string's length.",
+      "For example, if <code>var firstName = \"Julie\"</code>, you can get the value of the third-to-last letter of the string by using <code>firstName[firstName.length - 3]</code>.",
+      "Try looking at the <code>lastLetterOfLastName</code> variable declaration if you get stuck."
+    ],
+    "tests": [
+      "expect(secondToLastLetterOfLastName).to.equal('e');"
+    ],
+    "challengeSeed": [
+      "var firstName = \"Madeline\";",
+      "",
+      "var thirdToLastLetterOfFirstName = firstName[firstName.length - 2];",
+      "",
+      "var lastName = \"Chen\";",
+      "",
+      "var secondToLastLetterOfLastName = lastName;",
+      "",
+      "",
+      "// You can ignore this.",
+      "// We use this to show you the value of your variable in your output box.",
+      "// We'll learn about functions soon.",
+      "function returnValue(secondToLastLetterOfLastName) {",
+      "  return secondToLastLetterOfLastName;",
+      "}",
+      "returnValue(secondToLastLetterOfLastName);"
     ],
     "challengeType": 1
   }
