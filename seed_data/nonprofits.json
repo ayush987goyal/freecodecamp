@@ -1,0 +1,27 @@
+{
+  "id" : "bd7157d8c441cbafaeb5bdef",
+  "name": "Customize Angular.js Directives",
+  "registeredNonprofit": true,
+  "requestedDeliverables": [
+    "Website",
+    "Donor Managment System"
+  ],
+  "existingUserbase": true,
+  "acceptJavascript": true,
+  "agreeToTerms": true,
+  "whatDoesNonprofitDo": "Distributes food to needy Jewish families in Toronto",
+  "websiteLink": "string",
+  "stakeholderName": "string",
+  "stakeholderEmail": "string",
+  "organization": "string",
+  "endUser": "string",
+  "approvedDeliverables": "array",
+  "organizationDescription": "string",
+  "projectDescription": "string",
+  "logoUrl": "string",
+  "imageUrl": "string",
+  "interestedCampers": "array",
+  "confirmedCampers": "array",
+  "estimatedHours": "string",
+  "lastContact": "string"
+},
