@@ -69,8 +69,8 @@ var reset = function() {
         // give some time to handle the last response
         setTimeout( function() {
             endLoading();
-            console.log('resetting on fatal plugin error');
-            codeOutput.setValue('Infinite loop or fatal error!');
+            console.log("resetting on fatal plugin error");
+            codeOutput.setValue("Sorry, your code is either too slow, has a fatal error, or contains an infinite loop.");
             reset();
         }, 10);
     });

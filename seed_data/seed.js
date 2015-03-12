@@ -5,6 +5,8 @@ var bonfires = require('./bonfires.json'),
     coursewares = require('./coursewares.json'),
     unfinishedCoursewares = require('./unfinishedCoursewares.json'),
     Courseware = app.models.Courseware;
+    Nonprofit = app.models.Nonprofit,
+    nonprofits = require('./nonprofits.json');
 
 var counter = 0;
 var offerings = 2;
