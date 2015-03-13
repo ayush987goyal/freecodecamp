@@ -1577,15 +1577,59 @@
     "name": "Create a Text Area",
     "difficulty" : "0.50",
     "description": [
-      "",
-      ""
+      "Create a <code>textarea</code> and assign it the <code>label</code> of \"Describe your cat's diet\".",
+      "While <code>text</code> fields are useful for capturing short text inputs from your users, <code>textarea</code> elements are a way to get longer input.",
+      "<code>textarea</code> elements have both an opening and closing tag.",
+      "Create a <code>textarea</code> and a <code>label</code> above it with the text \"Describe your cat's diet\". Look at the \"Describe your cat's appearance\" elements if you get stuck."
     ],
     "tests": [
-      "expect($('h1')).to.have.class('text-center');",
-      "expect($('h1')).to.have.text('hello world');"
+      "expect($('textarea').length).to.eql(2);",
+      "expect($('label').length).to.eql(2);"
     ],
     "challengeSeed": [
-      "<h1>hello world</h1>"
+      "<form>",
+      "  <div class=\"form-group\">",
+      "    <input class=\"form-control\" type=\"email\" placeholder=\"user@example.com\">",
+      "  </div>",
+      "  <div class=\"form-group\">",
+      "    <input class=\"form-control\" type=\"text\" placeholder=\"San Francisco\">",
+      "  </div>",
+      "  <label>Describe your cat's appearance</label>",
+      "  <textarea></textarea>",
+      "",
+      "</form>"
+    ],
+    "challengeType": 0
+  },
+
+  {
+    "_id" : "bad87fee1348bd9aedf09833",
+    "name": "Specify the Number of Rows in a Text Area",
+    "difficulty" : "0.51",
+    "description": [
+      "Create a <code>textarea</code> that is 3 rows tall and assign it the label of \"Describe your cat's diet\".",
+      "While <code>text</code> fields are useful for capturing short text inputs from your users, <code>textarea</code> elements are a way to get longer input.",
+      "<code>textarea</code> elements have both an opening and closing tag.",
+      "Create a <code>textarea</code> and a <code>label</code> above it with the text \"Describe your cat's diet\". Look at the \"Describe your cat's appearance\" elements if you get stuck."
+    ],
+    "tests": [
+      "expect($('textarea').length).to.eql(2);",
+      "expect($('label').length).to.eql(2);",
+      "expect($('textarea:eq(1)').attr('rows')).to.eql('3');"
+
+    ],
+    "challengeSeed": [
+      "<form>",
+      "  <div class=\"form-group\">",
+      "    <input class=\"form-control\" type=\"email\" placeholder=\"user@example.com\">",
+      "  </div>",
+      "  <div class=\"form-group\">",
+      "    <input class=\"form-control\" type=\"text\" placeholder=\"San Francisco\">",
+      "  </div>",
+      "  <label>Describe your cat's appearance</label>",
+      "  <textarea rows=\"3\"></textarea>",
+      "",
+      "</form>"
     ],
     "challengeType": 0
   },
