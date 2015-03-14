@@ -1867,8 +1867,90 @@
     "challengeType": 0
   },
 
+  {
+    "_id" : "bad87fee1348bd9aedf08836",
+    "name": "Create a Set of Radio Buttons",
+    "difficulty" : "0.52",
+    "description": [
+      "NOTE: Bootstrap checkboxes are not working and I have no idea why not",
+      ""
+    ],
+    "tests": [
+      "expect($(':checkbox').length).to.eql(6)",
+      "expect($('label').length).to.eql(6);",
+      "expect($('.checkbox-inline').length).to.eql(6);"
+
+    ],
+    "challengeSeed": [
+      "<style>",
+      "  .thick-green-border {",
+      "    border-style: solid;",
+      "    border-color: #00ff00;",
+      "    border-width: 10px;",
+      "    border-radius: 50%;",
+      "  }",
+      "</style>",
+      "<h2 class=\"text-center\">cat photo app</h2>",
+      "<img class=\"thick-green-border img-responsive\" src=\"http://bit.ly/cutegraycat\"/>",
+      "<br/>",
+      "<h2>My cat's attributes</h2>",
+      "<label class=\"checkbox-inline\">",
+      "  <input type=\"checkbox\"> fluffy",
+      "</label>",
+      "<label class=\"checkbox-inline\">",
+      "  <input type=\"checkbox\"> curious",
+      "</label>",
+      "<label class=\"checkbox-inline\">",
+      "  <input type=\"checkbox\"> playful",
+      "</label>",
+      "<h2>My cat's diet",
+      ""
+    ],
+    "challengeType": 0
+  },
 
 
+  {
+    "_id" : "bad87fee1348bd9aedf08836",
+    "name": "Create a Set of Inline Checkboxes",
+    "difficulty" : "0.52",
+    "description": [
+      "NOTE: Bootstrap checkboxes are not working and I have no idea why not",
+      ""
+    ],
+    "tests": [
+      "expect($(':checkbox').length).to.eql(6)",
+      "expect($('label').length).to.eql(6);",
+      "expect($('.checkbox-inline').length).to.eql(6);"
+
+    ],
+    "challengeSeed": [
+      "<style>",
+      "  .thick-green-border {",
+      "    border-style: solid;",
+      "    border-color: #00ff00;",
+      "    border-width: 10px;",
+      "    border-radius: 50%;",
+      "  }",
+      "</style>",
+      "<h2 class=\"text-center\">cat photo app</h2>",
+      "<img class=\"thick-green-border img-responsive\" src=\"http://bit.ly/cutegraycat\"/>",
+      "<br/>",
+      "<h2>My cat's attributes</h2>",
+      "<label class=\"checkbox-inline\">",
+      "  <input type=\"checkbox\"> fluffy",
+      "</label>",
+      "<label class=\"checkbox-inline\">",
+      "  <input type=\"checkbox\"> curious",
+      "</label>",
+      "<label class=\"checkbox-inline\">",
+      "  <input type=\"checkbox\"> playful",
+      "</label>",
+      "<h2>My cat's diet",
+      ""
+    ],
+    "challengeType": 0
+  },
 
   {
     "_id" : "bad87fee1348bd9aedf08834",
