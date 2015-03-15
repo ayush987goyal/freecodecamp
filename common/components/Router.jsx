@@ -10,6 +10,7 @@ var React = require('react'),
     // # Components
     App = require('./App.jsx'),
     Bonfires = require('./bonfires');
+    Nonprofits = require('./nonprofits');
 
 var routes = (
   <Route
@@ -21,6 +22,11 @@ var routes = (
       name='bonfires'
       path='/bonfires/?:bonfires?'
       handler={ Bonfires } />
+
+    <Route
+      name='nonprofits'
+      path='/nonprofits'
+      handler= { Nonprofits } />
 
     <DefaultRoute
       handler={ Bonfires } />
