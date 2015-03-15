@@ -1,9 +1,8 @@
 extends ../layout
 block content
-  .jumbotron
-    .text-center
-      h1.hug-top We Help Nonprofits
-      h2 We'll code software solutions for your nonprofit, for free!
+  .jumbotron.text-center
+    h1.hug-top We Help Nonprofits
+    h2 We'll code software solutions for your nonprofit, for free!
       .row
         .col-xs-12.col-sm-12.col-md-3
           h3.nowrap Get Connected
@@ -22,7 +21,9 @@ block content
           img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landingIcons_nonprofits.svg.gz', title='Help nonprofits')
           p.landing-p Give nonprofits a boost by empowering them with code.
       .big-break
-      h2 Nonprofits we've helped
+      a.btn.btn-cta.signup-btn(href="/are-you-with-a-registered-nonprofit") Apply to Get Coding Help. It takes 2 minutes.
+      .big-break
+      h2 Campers you'll hang out with:
       .row
         .col-xs-12.col-sm-12.col-md-4
           img.img-responsive.testimonial-image.img-center(src="https://s3.amazonaws.com/freecodecamp/testimonial-jen.jpg", alt="@jenthebest's testimonial image")
@@ -37,39 +38,48 @@ block content
           .testimonial-copy  I'm currently working through Free Code Camp to improve my JavaScript. The community is very welcoming!
           h3 - @cynthialanel
       .big-break
-      h2 Things we can help you build:
-      .text-center.negative-35
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-android-globe
-          h2.black-text Websites
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-card
-          h2.black-text Donation Systems
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-android-calendar
-          h2.black-text Volunteer Systems
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-ios-box
-          h2.black-text Inventory Systems
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-university
-          h2.black-text E-learning Platforms
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-ios-people
-          h2.black-text Community Tools
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-ios-list
-          h2.black-text Web Forms
-        .col-xs-12.col-sm-12.col-md-3
-          .landing-skill-icon.ion-settings
-          h2.black-text ...and Other Tools
-          br
-          br
+    h2 Things we can help you build:
+    .text-center.negative-35
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-android-globe
+        h2.black-text Websites
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-card
+        h2.black-text Donation Systems
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-android-calendar
+        h2.black-text Volunteer Systems
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-ios-box
+        h2.black-text Inventory Systems
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-university
+        h2.black-text E-learning Platforms
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-ios-people
+        h2.black-text Community Tools
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-ios-list
+        h2.black-text Web Forms
+      .col-xs-12.col-sm-12.col-md-3
+        .landing-skill-icon.ion-settings
+        h2.black-text ...and Other Tools
+        br
+        br
       .big-break
-
-      h2 Do you represent a nonprofit organization that is registered with your government?
-      .row
-        .col-xs-12.col-sm-6
-          a.btn.btn-primary.btn-big(href="/how-can-free-code-camp-help-you") Yes, I represent a registered nonprofit
-        .col-xs-12.col-sm-6
-          a.btn.btn-warning.btn-big(href="/help-for-everyone-else") No, I don't represent a registered nonprofit
+      h2 Why you should join our community right now:
+      h3.col-xs-offset-0.col-sm-offset-1
+        ul.text-left
+          li.ion-code &nbsp; We're thousands of professionals, all learning to code together
+          li.ion-code &nbsp; We're building projects for dozens of nonprofits
+          li.ion-code &nbsp; Our community is 100% free and open source
+          li.ion-code &nbsp; You'll learn Full Stack JavaScript and become a Software Engineer
+          li.ion-code &nbsp; You'll work through our focused, interactive courses and tutorials
+          li.ion-code &nbsp; You'll learn to code at your own pace, in your browser or on your phone
+          li.ion-code &nbsp; You'll become qualified for thousands of jobs currently going unfilled
+          li.ion-code &nbsp; You can get help in real time from our community chat rooms and forum
+          li.ion-code &nbsp; We all share one common goal: to boost our careers with code
+      .big-break
+      a.btn.btn-cta.signup-btn(href="/are-you-with-a-registered-nonprofit") Apply to Get Coding Help. It takes 2 minutes.
+      script.
+        challengeName = 'Home'

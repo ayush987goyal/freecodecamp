@@ -12,10 +12,17 @@ module.exports = function(app) {
   router.get('/nonprofits', nonprofits);
   router.get('/help-for-everyone-else', helpForEveryoneElse);
   router.get('/how-can-free-code-camp-help-you', howCanFreeCodeCampHelpYou);
+  router.get('/are-you-with-a-registered-nonprofit', areYouWithARegisteredNonprofit);
 
   function nonprofits(req, res) {
     res.render('nonprofits/home', {
       title: 'Nonprofit Projects'
+    });
+  }
+
+  function areYouWithARegisteredNonprofit(req, res) {
+    res.render('nonprofits/are-you-a-registered-nonprofit', {
+      title: 'Are you with a Registered Nonprofit'
     });
   }
 

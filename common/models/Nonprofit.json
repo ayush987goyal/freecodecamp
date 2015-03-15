@@ -6,7 +6,6 @@
       "type": "string",
       "unique": true
     },
-    "registeredNonprofit": true,
     "requestedDeliverables": "array",
     "existingUserbase": true,
     "acceptJavascript": true,
@@ -25,7 +24,7 @@
     "interestedCampers": "array",
     "confirmedCampers": "array",
     "estimatedHours": "string",
-    "lastContact": "string"
+    "lastContact": []
   },
   "validations": [],
   "acls": [],
