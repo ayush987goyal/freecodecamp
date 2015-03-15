@@ -9,7 +9,7 @@ var Client = require('node-rest-client').Client,
 module.exports = function(app) {
   debug('setting up resources routes');
   var router = app.loopback.Router();
-  router.get('/nonprofits', nonprofits);
+  // router.get('/nonprofits', nonprofits);
   router.get('/help-for-everyone-else', helpForEveryoneElse);
   router.get('/how-can-free-code-camp-help-you', howCanFreeCodeCampHelpYou);
   router.get('/are-you-with-a-registered-nonprofit', areYouWithARegisteredNonprofit);

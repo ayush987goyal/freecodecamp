@@ -9,7 +9,7 @@ var React = require('react'),
 
     // # Components
     App = require('./App.jsx'),
-    Bonfires = require('./bonfires');
+    Bonfires = require('./bonfires'),
     Nonprofits = require('./nonprofits');
 
 var routes = (

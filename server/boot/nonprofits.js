@@ -32,23 +32,23 @@ module.exports = function(app) {
         ContextActions.setContext(ctx);
       });
   });
-  ContextStore
-    .filter(function(ctx) {
-      return !!ctx.Handler;
-    })
-    .subscribe(function(ctx) {
-
-      debug('rendering %s to string', ctx.state.path);
-      var html = React.renderToString(ctx.Handler());
-
-      debug('rendering jade');
-      ctx.res.render('react-layout', { html: html }, function(err, markup) {
-        if (err) { return ctx.next(err); }
-        debug('jade template rendered');
-
-        debug('Sending %s to user', ctx.state.path);
-        return ctx.res.send(markup);
-      });
-    });
+  //ContextStore
+  //  .filter(function(ctx) {
+  //    return !!ctx.Handler;
+  //  })
+  //  .subscribe(function(ctx) {
+  //
+  //    debug('rendering %s to string', ctx.state.path);
+  //    var html = React.renderToString(ctx.Handler());
+  //
+  //    debug('rendering jade');
+  //    ctx.res.render('react-layout', { html: html }, function(err, markup) {
+  //      if (err) { return ctx.next(err); }
+  //      debug('jade template rendered');
+  //
+  //      debug('Sending %s to user', ctx.state.path);
+  //      return ctx.res.send(markup);
+  //    });
+  //  });
 
 };

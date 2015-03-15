@@ -1,1 +1,1 @@
-module.exports = require('./Nonprofits');
+module.exports = require('./Nonprofits.jsx');
