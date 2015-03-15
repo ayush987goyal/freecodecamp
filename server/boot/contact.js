@@ -25,43 +25,6 @@ module.exports = function(app) {
     passportUtils.isAuthenticated,
     postDoneWithFirst100Hours
   );
-  router.get('/nonprofits', getNonprofitsForm);
-  router.post('/nonprofits', postNonprofitsForm);
-
-  /**
-   * GET /contact
-   * Contact form page.
-   */
-
-  function getNonprofitsForm(req, res) {
-    res.render('contact/nonprofits', {
-      title: 'Free Code Work for Nonprofits Project Submission Page'
-    });
-  }
-
-  /**
-   * POST /contact
-   * Send a contact form via Nodemailer.
-   */
-
-  function postNonprofitsForm(req, res) {
-    var mailOptions = {
-      to: 'team@freecodecamp.com',
-      name: req.body.name,
-      from: req.body.email,
-      subject: 'CodeNonprofit Project Idea from ' + req.body.name,
-      text: req.body.message
-    };
-
-    transporter.sendMail(mailOptions, function (err) {
-      if (err) {
-        req.flash('errors', {msg: err.message});
-        return res.redirect('/nonprofits');
-      }
-      req.flash('success', {msg: 'Email has been sent successfully!'});
-      res.redirect('/nonprofits');
-    });
-  }
 
   function getDoneWithFirst100Hours(req, res) {
     if (req.user.points >= 53) {
