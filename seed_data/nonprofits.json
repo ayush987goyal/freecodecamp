@@ -24,4 +24,4 @@
   "confirmedCampers": "array",
   "estimatedHours": "string",
   "lastContact": "string"
-},
+}
