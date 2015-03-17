@@ -39,4 +39,4 @@ var Chat = React.createClass({
   }
 });
 
-module.exports = Resources;
+module.exports = Chat;

@@ -12,7 +12,7 @@ module.exports = function(app) {
   var router = app.loopback.Router();
   router.get('/privacy', privacy);
   router.get('/jquery-exercises', jqueryExercises);
-  router.get('/chat', chat);
+  //router.get('/chat', chat);
   router.get('/live-pair-programming', livePairProgramming);
   router.get('/install-screenhero', installScreenHero);
   router.get('/javascript-in-your-inbox', javaScriptInYourInbox);

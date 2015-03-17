@@ -32,6 +32,28 @@ module.exports = function(app) {
         ContextActions.setContext(ctx);
       });
   });
+
+  app.get('/chat', function(req, res, next) {
+    debug('path req', decodeURI(req.path));
+    Router(decodeURI(req.path))
+      .run(function(Handler, state) {
+        Handler = React.createFactory(Handler);
+
+        debug('Route found, %s ', state.path);
+
+        var ctx = {
+          req: req,
+          res: res,
+          next: next,
+          Handler: Handler,
+          state: state,
+          userId: req.session ? req.session.userId : null
+        };
+
+        debug('context action');
+        ContextActions.setContext(ctx);
+      });
+  });
   //ContextStore
   //  .filter(function(ctx) {
   //    return !!ctx.Handler;
