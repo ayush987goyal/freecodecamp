@@ -7,7 +7,6 @@ var React = require('react'),
     ContextStore = require('../common/components/context/Store'),
     ContextActions = require('../common/components/context/Actions');
 
-var app = require('loopback');
 var mountNode = document.getElementById('app');
 
 debug('Matching Route');
