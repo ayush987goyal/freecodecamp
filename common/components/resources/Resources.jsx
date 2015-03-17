@@ -30,7 +30,7 @@ var Chat = React.createClass({
       </h3>
       <Col
         xs={ 12 }>
-        <div class="embed-responsive embed-responsive-16by9 gitter-imbed">
+        <div className="embed-responsive embed-responsive-16by9 gitter-imbed">
           <iframe src="https://www.gitter.im/freecodecamp/freecodecamp" frameborder="0" scrolling="no"></iframe>
         </div>
       </Col>
@@ -44,7 +44,7 @@ var Chromebook = React.createClass({
     return(
       <Grid>
         <h3>
-          <ol class="col-md-offset-2">
+          <ol className="col-md-offset-2">
             <li>Create a GitHub Account&nbsp;<a href="http://github.com/join" target="_blank">here</a>.</li>
             <li>Download the chat room app on &nbsp;<a href="https://update.gitter.im/win/latest">Windows</a>,&nbsp;<a href="https://update.gitter.im/osx/latest">Mac</a>,&nbsp;<a href="http://appstore.com/gitter">iPhone</a>,&nbsp; or &nbsp;<a href="https://play.google.com/store/apps/details?id=im.gitter.gitter&amp;hl=en_GB">Android</a>&nbsp;, or go &nbsp;<a href="http://chat.freecodecamp.com">here</a>.</li>
             <li>Keep the chat room open while you code so that you can meet friends and ask for help.</li>
@@ -52,7 +52,7 @@ var Chromebook = React.createClass({
         </h3>
         <Col
           xs={ 12 }>
-          <div class="embed-responsive embed-responsive-16by9 gitter-imbed"></div>
+          <div className="embed-responsive embed-responsive-16by9 gitter-imbed"></div>
         </Col>
       </Grid>
     );
@@ -63,13 +63,13 @@ var ControlShortcuts = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron text-center">
-          <h1 class="hug-top">Global Control Shortcuts for Mac</h1>
+        <div className="jumbotron text-center">
+          <h1 className="hug-top">Global Control Shortcuts for Mac</h1>
           <h2>These Global Control Shortcuts for Mac will save you hours by speeding up your typing</h2><br/>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="//player.vimeo.com/video/107073108" class="embed-responsive-item"></iframe>
+          <div className="embed-responsive embed-responsive-16by9">
+            <iframe src="//player.vimeo.com/video/107073108" className="embed-responsive-item"></iframe>
           </div>
-          <div class="text-left">
+          <div className="text-left">
             <h3>These global shortcuts work everywhere on a Mac:
               <ul>
                 <li>Control + F = Forward</li>
@@ -83,7 +83,7 @@ var ControlShortcuts = React.createClass({
                 <li>Control + K = Kill line</li>
               </ul>
             </h3>
-          </div><a href="/login" class="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/>
+          </div><a href="/login" className="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/>
         </div>
       </Grid>
     );
@@ -94,13 +94,13 @@ var DeployAWebsite = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron text-center">
-          <h1 class="hug-top">Deploy a Dynamic Website in 7 Minutes</h1>
+        <div className="jumbotron text-center">
+          <h1 className="hug-top">Deploy a Dynamic Website in 7 Minutes</h1>
           <h2>Here's a fast and easy way to deploy a dynamic website to the internet</h2><br/>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="//player.vimeo.com/video/115194017" class="embed-responsive-item"></iframe>
+          <div className="embed-responsive embed-responsive-16by9">
+            <iframe src="//player.vimeo.com/video/115194017" className="embed-responsive-item"></iframe>
           </div>
-          <div class="text-left">
+          <div className="text-left">
             <h3>Use these links:
               <ul>
                 <li><a href="http://www.atom.io" target="_blank">http://www.atom.io</a>&nbsp; - free text editor</li>
@@ -110,7 +110,7 @@ var DeployAWebsite = React.createClass({
               </ul>
             </h3>
           </div>
-          <a href="/login" class="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/>
+          <a href="/login" className="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/>
         </div>
       </Grid>
     );
@@ -121,13 +121,13 @@ var GmailShortcuts = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron text-center">
-          <h1 class="hug-top">Gmail Shortcuts</h1>
+        <div className="jumbotron text-center">
+          <h1 className="hug-top">Gmail Shortcuts</h1>
           <h2>These Gmail Shortcuts will save you hours and help you get to Zero Inbox</h2><br/>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="//player.vimeo.com/video/115194016" class="embed-responsive-item"></iframe>
+          <div className="embed-responsive embed-responsive-16by9">
+            <iframe src="//player.vimeo.com/video/115194016" className="embed-responsive-item"></iframe>
           </div>
-          <div class="text-left">
+          <div className="text-left">
             <h3>The shortcuts:
               <ul>
                 <li>j - move down</li>
@@ -144,7 +144,7 @@ var GmailShortcuts = React.createClass({
               </ul>
             </h3>
           </div>
-            <a href="/login" class="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/>
+            <a href="/login" className="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/>
         </div>
       </Grid>
     );
@@ -155,8 +155,8 @@ var InstallScreenhero = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron text-center">
-          <h1 class="hug-top">Install ScreenHero</h1>
+        <div className="jumbotron text-center">
+          <h1 className="hug-top">Install ScreenHero</h1>
           <h2><a href="http://links.screenhero.com/e/c/eyJlbWFpbF9pZCI6Ik1qQTNNem9XQkNJQ1pBQUNjd0FYQVZrVEdnRkxNamtfX0JWZEdGVEpSZkVCWlRwbFpXRTBNamM0WVMxaE56SmlMVEV4WlRRdE9HUXpZUzFpWXpVNE1HRTJNalkxTldNNk1UUTJNVEEyQUE9PSIsInBvc2l0aW9uIjowLCJocmVmIjoiaHR0cDovL2RsLnNjcmVlbmhlcm8uY29tL3NtYXJ0ZG93bmxvYWQvZklYQU1UUUJBTEtQQkhQTC9TY3JlZW5oZXJvLnppcD9zb3VyY2U9d2ViIn0=">Download for Mac</a></h2>
           <h2><a href="http://links.screenhero.com/e/c/eyJlbWFpbF9pZCI6Ik1qQTNNem9XQkNJQ1pBQUNjd0FYQVZrVEdnRkxNamtfX0JWZEdGVEpSZkVCWlRwbFpXRTBNamM0WVMxaE56SmlMVEV4WlRRdE9HUXpZUzFpWXpVNE1HRTJNalkxTldNNk1UUTJNVEEyQUE9PSIsInBvc2l0aW9uIjoxLCJocmVmIjoiaHR0cDovL2RsLnNjcmVlbmhlcm8uY29tL3NtYXJ0ZG93bmxvYWQvZklYQU1UUUJBTEtQQkhQTC9TY3JlZW5oZXJvLXNldHVwLmV4ZSJ9"> Download for Windows</a></h2>
           <p>You can learn more about using Screen Hero by taking &nbsp;<a href="http://www.freecodecamp.com/challenges/34">Challenge 34.</a></p>
@@ -171,12 +171,12 @@ var JavaScriptInYourInbox = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron text-center">
-          <h1 class="hug-top">Win a Chromebook</h1>
-          <h2>Sign up for Inbox.js - JavaScript challenges in your inbox - and enter to win a Chromebook!</h2><img src="https://s3.amazonaws.com/freecodecamp/chromebook.jpg" alt="HP Chromebook 11" class="image-responsive"/>
-          <script src="//widget-prime.rafflecopter.com/launch.js"></script><a id="rcwidget_a7khonhd" href="http://www.rafflecopter.com/rafl/display/d70901b10/" rel="nofollow" data-raflid="d70901b10" data-theme="classic" data-template="" class="rcptr">a Rafflecopter giveaway</a>
-          <div class="animated zoomInDown delay-10">
-          <p>Finished signing up for the giveaway?</p><a href="/login" class="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a>
+        <div className="jumbotron text-center">
+          <h1 className="hug-top">Win a Chromebook</h1>
+          <h2>Sign up for Inbox.js - JavaScript challenges in your inbox - and enter to win a Chromebook!</h2><img src="https://s3.amazonaws.com/freecodecamp/chromebook.jpg" alt="HP Chromebook 11" className="image-responsive"/>
+          <script src="//widget-prime.rafflecopter.com/launch.js"></script><a id="rcwidget_a7khonhd" href="http://www.rafflecopter.com/rafl/display/d70901b10/" rel="nofollow" data-raflid="d70901b10" data-theme="classic" data-template="" className="rcptr">a Rafflecopter giveaway</a>
+          <div className="animated zoomInDown delay-10">
+          <p>Finished signing up for the giveaway?</p><a href="/login" className="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a>
          </div><br/>
         </div>
       </Grid>
@@ -224,19 +224,19 @@ var JqueryExercises = React.createClass({
           };
           var elements = {
             0: "",
-            1: "<div class='btn btn-default target'>.target</div>",
-            2: "<div class='btn btn-default target'>.target</div>",
-            3: "<div class='btn btn-default target'>target0</div><div class='btn btn-default target'>target1</div><div class='btn btn-default target'>target2</div><div class='btn btn-default target'>target3</div><div class='btn btn-default target'>target4</div>",
-            4: "<div class='btn btn-default target'>target1</div><div class='btn btn-default target'>target2</div><div class='btn btn-default target'>target3</div><div class='btn btn-default target'>target4</div><div class='btn btn-default target'>target5</div>",
-            5: "<div class='btn btn-default target'>target1</div><div class='btn btn-default target'>target2</div><div class='btn btn-default target'>target3</div><div class='btn btn-default target'>target4</div><div class='btn btn-default target'>target5</div>",
-            6: "<div class='btn btn-default target'>target1</div><div class='btn btn-default target'>target2</div><div class='btn btn-default target'>target3</div><div class='btn btn-default target'>target4</div><div class='btn btn-default target'>target5</div>",
+            1: "<div className='btn btn-default target'>.target</div>",
+            2: "<div className='btn btn-default target'>.target</div>",
+            3: "<div className='btn btn-default target'>target0</div><div className='btn btn-default target'>target1</div><div className='btn btn-default target'>target2</div><div className='btn btn-default target'>target3</div><div className='btn btn-default target'>target4</div>",
+            4: "<div className='btn btn-default target'>target1</div><div className='btn btn-default target'>target2</div><div className='btn btn-default target'>target3</div><div className='btn btn-default target'>target4</div><div className='btn btn-default target'>target5</div>",
+            5: "<div className='btn btn-default target'>target1</div><div className='btn btn-default target'>target2</div><div className='btn btn-default target'>target3</div><div className='btn btn-default target'>target4</div><div className='btn btn-default target'>target5</div>",
+            6: "<div className='btn btn-default target'>target1</div><div className='btn btn-default target'>target2</div><div className='btn btn-default target'>target3</div><div className='btn btn-default target'>target4</div><div className='btn btn-default target'>target5</div>",
             7: "<input type='checkbox'>checkbox1</input><br><input type='checkbox'>checkbox2</input>",
             8: "<input type='text' value='target'>",
             9: "<select><option value='target0'>target0</option><option value='target1'>target1</option><option value='target2'>target2</option><option value='target3'>target3</option></select>",
-            10: "<div class='btn btn-default target'>.target</div>",
-            11: "<div class='btn btn-default target' data-lookAtMe='This is some super secret data hidden in the DOM!'>.target</div>",
-            12: "<div class='btn btn-default target'>target1</div><div class='btn btn-default target'>target2</div><div class='btn btn-default target'>target3</div><div class='btn btn-default target'>target4</div><div class='btn btn-default target'>target5</div>",
-            13: "<div class='btn btn-default target' id='finished-button'>Finish!</div>"
+            10: "<div className='btn btn-default target'>.target</div>",
+            11: "<div className='btn btn-default target' data-lookAtMe='This is some super secret data hidden in the DOM!'>.target</div>",
+            12: "<div className='btn btn-default target'>target1</div><div className='btn btn-default target'>target2</div><div className='btn btn-default target'>target3</div><div className='btn btn-default target'>target4</div><div className='btn btn-default target'>target5</div>",
+            13: "<div className='btn btn-default target' id='finished-button'>Finish!</div>"
           };
           function refreshEverything() {
             $('#directions').text("Exercise " + currentExercise + ": " + directions[currentExercise]);
@@ -279,22 +279,22 @@ var JqueryExercises = React.createClass({
           refreshEverything(currentExercise);
           });
         </script>
-        <div class="container">
+        <div className="container">
           <Row>
             <Col
               xs={ 12 }
               sm={ 8 }>
-              <div class="jumbotron">
+              <div className="jumbotron">
                 <Row>
                   <Col
                     xs={ 12 }>
-                    <div class="text-center">
-                      <img src="https://s3.amazonaws.com/freecodecamp/logo4.0LG.png" alt="learn to code free at freecodecamp.com" class="img-responsive"/>
+                    <div className="text-center">
+                      <img src="https://s3.amazonaws.com/freecodecamp/logo4.0LG.png" alt="learn to code free at freecodecamp.com" className="img-responsive"/>
                       <h1>jQuery Exercises</h1>
                     </div>
                   </Col>
                   <br/>
-                  <div id="directions" class="text-primary"></div><br/>
+                  <div id="directions" className="text-primary"></div><br/>
                 </Row>
                 <Row>
                   <Col
@@ -312,22 +312,22 @@ var JqueryExercises = React.createClass({
           <Row>
             <Col
             xs={ 6 }>
-              <div id="location1" class="well jquery-exercises-well"></div>
+              <div id="location1" className="well jquery-exercises-well"></div>
             </Col>
             <Col
             xs={ 6 }>
-              <div id="location2" class="well jquery-exercises-well"></div>
+              <div id="location2" className="well jquery-exercises-well"></div>
             </Col>
           </Row>
-          <div id="next-exercise" class="btn btn-primary btn-lg btn-block">#next-exercise</div><br/>
-          <button id="solution-button" class="btn btn-block btn-lg btn-info">#solution-button</button><br/>
-          <div class="text-center">Created for<a href="http://www.FreeCodeCamp.com">Free Code Camp</a><br/>by<a href="https://twitter.com/ossia">Quincy Larson</a>,<a href="https://www.twitter.com/terakilobyte">Nathan Leniz</a>,<a href="https://twitter.com/iheartkode"> Mark Howard</a>and<a href="https://twitter.com/ryanmalm">Ryan Malm</a>. Please<a href="http://codepen.io/ossia/pen/raVEgN">fork this.</a></div>
+          <div id="next-exercise" className="btn btn-primary btn-lg btn-block">#next-exercise</div><br/>
+          <button id="solution-button" className="btn btn-block btn-lg btn-info">#solution-button</button><br/>
+          <div className="text-center">Created for<a href="http://www.FreeCodeCamp.com">Free Code Camp</a><br/>by<a href="https://twitter.com/ossia">Quincy Larson</a>,<a href="https://www.twitter.com/terakilobyte">Nathan Leniz</a>,<a href="https://twitter.com/iheartkode"> Mark Howard</a>and<a href="https://twitter.com/ryanmalm">Ryan Malm</a>. Please<a href="http://codepen.io/ossia/pen/raVEgN">fork this.</a></div>
           <Col
           xs={ 12 }
           sm={ 4 }>
-            <div class="panel panel-primary">
-              <div class="panel panel-heading">List of Exercises</div>
-              <div class="panel-body">
+            <div className="panel panel-primary">
+              <div className="panel panel-heading">List of Exercises</div>
+              <div className="panel-body">
                 <ol start="0">
                   <li><a href="#">Re-enable an element</a></li>
                   <li><a href="#">Change an element&apos;s parent</a></li>
@@ -347,26 +347,26 @@ var JqueryExercises = React.createClass({
               </div>
             </div>
           </Col>
-          <div id="hint-modal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h4 id="myModalLabel" class="modal-title">Your hint</h4>
+          <div id="hint-modal" tabindex="-1" role="dialog" aria-hidden="true" className="modal fade">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <button type="button" data-dismiss="modal" className="close"><span aria-hidden="true">&times;</span><span className="sr-only">Close</span></button>
+                  <h4 id="myModalLabel" className="modal-title">Your hint</h4>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                 <div id="hint"></div>
               </div>
             </div>
           </div>
-          <div id="finished-modal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h4 id="myModalLabel" class="modal-title">Congratulations! You&apos;ve finished our jQuery exercises!<a href="http://www.freecodecamp.com/">Go back to Free Code Camp</a>and mark this challenge complete.</h4>
+          <div id="finished-modal" tabindex="-1" role="dialog" aria-hidden="true" className="modal fade">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <button type="button" data-dismiss="modal" className="close"><span aria-hidden="true">&times;</span><span className="sr-only">Close</span></button>
+                  <h4 id="myModalLabel" className="modal-title">Congratulations! You&apos;ve finished our jQuery exercises!<a href="http://www.freecodecamp.com/">Go back to Free Code Camp</a>and mark this challenge complete.</h4>
                 </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 <div id="hint"></div>
               </div>
             </div>
@@ -381,9 +381,9 @@ var LearnToCode = React.createClass({
   render: function () {
     return(
       <Grid>
-        <img src="https://s3.amazonaws.com/freecodecamp/wide-social-banner.png" class="img-responsive img-center"/><br/>
-        <div class="text-center">
-          <a href="/signin" class="btn btn-cta signup-btn next-challenge-button">
+        <img src="https://s3.amazonaws.com/freecodecamp/wide-social-banner.png" className="img-responsive img-center"/><br/>
+        <div className="text-center">
+          <a href="/signin" className="btn btn-cta signup-btn next-challenge-button">
             Start learning to code (it's free)
           </a>
         </div>
@@ -393,10 +393,10 @@ var LearnToCode = React.createClass({
           xs={ 12 }
           sm={ 12 }
           md={ 4 }>
-          <div class="panel panel-info">
-            <div class="panel-heading landing-panel-heading text-center">Get Connected</div>
-              <div class="panel-body text-center">
-                <img src="https://s3.amazonaws.com/freecodecamp/about-chatroom.jpg" alt="A screen shot from Free Code Camp's main chat room" class="img-responsive img-center"/>
+          <div className="panel panel-info">
+            <div className="panel-heading landing-panel-heading text-center">Get Connected</div>
+              <div className="panel-body text-center">
+                <img src="https://s3.amazonaws.com/freecodecamp/about-chatroom.jpg" alt="A screen shot from Free Code Camp's main chat room" className="img-responsive img-center"/>
                 <h3> campers are doing challenges.</h3>
                 <h3> campers are coding for nonprofits.</h3>
               </div>
@@ -406,10 +406,10 @@ var LearnToCode = React.createClass({
           xs={ 12 }
           sm={ 12 }
           md={ 4 }>
-            <div class="panel panel-info">
-              <div class="panel-heading landing-panel-heading text-center">Learn JavaScript</div>
-              <div class="panel-body text-center">
-                <img src="https://s3.amazonaws.com/freecodecamp/about-github.jpg" alt="A screen shot of a GitHub commit graph showing a streak of 33 consecutive days of contributions" class="img-responsive img-center"/>
+            <div className="panel panel-info">
+              <div className="panel-heading landing-panel-heading text-center">Learn JavaScript</div>
+              <div className="panel-body text-center">
+                <img src="https://s3.amazonaws.com/freecodecamp/about-github.jpg" alt="A screen shot of a GitHub commit graph showing a streak of 33 consecutive days of contributions" className="img-responsive img-center"/>
                 <div id='#github'>
                   <script>
                     (function() {
@@ -432,10 +432,10 @@ var LearnToCode = React.createClass({
           xs={ 12 }
           sm={ 12 }
           md={ 4 }>
-            <div class="panel panel-info">
-              <div class="panel-heading landing-panel-heading text-center">Help Nonprofits</div>
-              <div class="panel-body text-center">
-                <img src="https://s3.amazonaws.com/freecodecamp/about-trello.jpg" alt="a screen shot of Free Code Camp's nonprofit project Trello board showing several active projects" class="img-responsive img-center"/>
+            <div className="panel panel-info">
+              <div className="panel-heading landing-panel-heading text-center">Help Nonprofits</div>
+              <div className="panel-body text-center">
+                <img src="https://s3.amazonaws.com/freecodecamp/about-trello.jpg" alt="a screen shot of Free Code Camp's nonprofit project Trello board showing several active projects" className="img-responsive img-center"/>
                 <h3>We launched  days ago.</h3>
                   <div id='#trello'>
                     <script>
@@ -464,9 +464,9 @@ var LearnToCode = React.createClass({
           xs={ 12 }
           sm={ 12 }
           md={ 6 }>
-            <div class="panel panel-info">
-              <div class="panel-heading landing-panel-heading text-center">Announcements</div>
-              <div class="panel-body">
+            <div className="panel panel-info">
+              <div className="panel-heading landing-panel-heading text-center">Announcements</div>
+              <div className="panel-body">
                 <div id='blog'>
                   <script>
                     (function() {
@@ -485,7 +485,7 @@ var LearnToCode = React.createClass({
                     })();
                   </script>
                 </div>
-                <div class="landing-panel-body text-center"><a data-dnt="true" href="https://twitter.com/FreeCodeCamp" data-widget-id="560847186548621312" class="twitter-timeline">Tweets by @FreeCodeCamp</a>
+                <div className="landing-panel-body text-center"><a data-dnt="true" href="https://twitter.com/FreeCodeCamp" data-widget-id="560847186548621312" className="twitter-timeline">Tweets by @FreeCodeCamp</a>
                   <script>
                     !function (d, s, id) {
                       var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -505,8 +505,8 @@ var LearnToCode = React.createClass({
                   </Col>
                   <Col
                     xs={ 12 }>
-                    <div class="github-and-twitter-button-text">
-                      <a class="twitter-follow-button"
+                    <div className="github-and-twitter-button-text">
+                      <a className="twitter-follow-button"
                         href="https://twitter.com/freecodecamp"
                         data-show-count="true"
                         data-lang="en">
@@ -517,11 +517,11 @@ var LearnToCode = React.createClass({
                   </Col>
                   <Col
                   xs={ 12 }>
-                    <div class="github-and-twitter-button-text">Star us on GitHub here:</div>
+                    <div className="github-and-twitter-button-text">Star us on GitHub here:</div>
                   </Col>
                   <Col
                     xs={ 12 }>
-                    <div class="github-and-twitter-button-text">
+                    <div className="github-and-twitter-button-text">
                       <iframe src="http://ghbtns.com/github-btn.html?user=freecodecamp&repo=freecodecamp&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true">
                       </iframe>
                     </div>
@@ -540,7 +540,7 @@ var LivePairProgramming = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="text-center">
+        <div className="text-center">
           <h1>Live Pair Programming</h1>
           <h2 id="next-session"></h2>
           <h2>Watch the live stream below or on our &nbsp;<a href="http://twitch.tv/freecodecamp" target="_blank">Twitch.tv channel</a>.</h2>
@@ -548,22 +548,22 @@ var LivePairProgramming = React.createClass({
             <Col
             xs={ 12 }
             md={ 8 }>
-              <div class="embed-responsive embed-responsive-16by9">
+              <div className="embed-responsive embed-responsive-16by9">
                 <iframe src="http://www.twitch.tv/freecodecamp/embed" frameborder="0" scrolling="no"></iframe>
               </div>
             </Col>
             <Col
             xs={ 12 }
             md={ 8 }>
-              <div class="visible-sm visible-xs">
-                <div class="embed-responsive embed-responsive-16by9">
+              <div className="visible-sm visible-xs">
+                <div className="embed-responsive embed-responsive-16by9">
                   <iframe src="http://www.twitch.tv/freecodecamp/chat?popout=" frameborder="0" scrolling="no"></iframe>
                 </div>
               </div>
-            <div class="visible-md visible-lg">
+            <div className="visible-md visible-lg">
               <Col
                 md={ 4 }>
-                <div class="embed-responsive embed-responsive-twitch-chat">
+                <div className="embed-responsive embed-responsive-twitch-chat">
                   <iframe src="http://www.twitch.tv/freecodecamp/chat?popout=" frameborder="0" scrolling="no"></iframe>
                 </div>
               </Col>
@@ -573,27 +573,27 @@ var LivePairProgramming = React.createClass({
         <h1>Previous Live Pair Programming Sessions</h1>
         <Col
           xs={ 12 }>
-          <div class="embed-responsive embed-responsive-16by9 big-break">
-            <iframe src="//www.youtube.com/embed/_BErpDdmBOw" class="embed-responsive-item"></iframe>
+          <div className="embed-responsive embed-responsive-16by9 big-break">
+            <iframe src="//www.youtube.com/embed/_BErpDdmBOw" className="embed-responsive-item"></iframe>
           </div>
-          <h3 class="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/_BErpDdmBOw">http://www.youtube.com/watch/_BErpDdmBOw</a></h3>
-          <div class="embed-responsive embed-responsive-16by9 big-break">
-            <iframe src="//www.youtube.com/embed/Fn9HMn79KH0" class="embed-responsive-item"></iframe>
+          <h3 className="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/_BErpDdmBOw">http://www.youtube.com/watch/_BErpDdmBOw</a></h3>
+          <div className="embed-responsive embed-responsive-16by9 big-break">
+            <iframe src="//www.youtube.com/embed/Fn9HMn79KH0" className="embed-responsive-item"></iframe>
           </div>
-          <h3 class="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/Fn9HMn79KH0">http://www.youtube.com/watch/Fn9HMn79KH0</a></h3>
-          <div class="embed-responsive embed-responsive-16by9 big-break">
-            <iframe src="//www.youtube.com/embed/S7iRBZJwOAs" class="embed-responsive-item"></iframe>
+          <h3 className="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/Fn9HMn79KH0">http://www.youtube.com/watch/Fn9HMn79KH0</a></h3>
+          <div className="embed-responsive embed-responsive-16by9 big-break">
+            <iframe src="//www.youtube.com/embed/S7iRBZJwOAs" className="embed-responsive-item"></iframe>
           </div>
-          <h3 class="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/S7iRBZJwOAs">http://www.youtube.com/watch/S7iRBZJwOAs</a></h3>
-          <div class="embed-responsive embed-responsive-16by9 big-break">
-            <iframe src="//www.youtube.com/embed/BHNRg39ZblE" class="embed-responsive-item"></iframe>
+          <h3 className="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/S7iRBZJwOAs">http://www.youtube.com/watch/S7iRBZJwOAs</a></h3>
+          <div className="embed-responsive embed-responsive-16by9 big-break">
+            <iframe src="//www.youtube.com/embed/BHNRg39ZblE" className="embed-responsive-item"></iframe>
           </div>
-          <h3 class="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/BHNRg39ZblE">http://www.youtube.com/watch/BHNRg39ZblE</a></h3>
-          <div class="embed-responsive embed-responsive-16by9 big-break">
-            <iframe src="//www.youtube.com/embed/YDfkHlDmehA" class="embed-responsive-item"></iframe>
+          <h3 className="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/BHNRg39ZblE">http://www.youtube.com/watch/BHNRg39ZblE</a></h3>
+          <div className="embed-responsive embed-responsive-16by9 big-break">
+            <iframe src="//www.youtube.com/embed/YDfkHlDmehA" className="embed-responsive-item"></iframe>
           </div>
-          <h3 class="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/YDfkHlDmehA">http://www.youtube.com/watch/YDfkHlDmehA</a></h3>
-          <h3>Got 3 minutes? Learn to code with us!</h3><a href="/login" class="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/><br/><br/><br/><br/>
+          <h3 className="wrappable">link: &nbsp;<a href="http://www.youtube.com/watch/YDfkHlDmehA">http://www.youtube.com/watch/YDfkHlDmehA</a></h3>
+          <h3>Got 3 minutes? Learn to code with us!</h3><a href="/login" className="btn btn-cta signup-btn btn-primary">Start learning to code (it's free)</a><br/><br/><br/><br/><br/>
         </Col>
         <script src="/js/lib/moment/moment.js"></script>
         <script src="/js/lib/moment/nextTuesday.js"></script>
@@ -608,8 +608,8 @@ var NonprofitProjectInstructions = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron">
-          <div class="col-sm-offset-1">
+        <div className="jumbotron">
+          <div className="col-sm-offset-1">
             <h1>Nonprofit projects</h1>
             <h3>It's time to apply what you've learned here at Free Code Camp.</h3>
             <h3>By the end of this process, you'll have a portfolio of live apps being used by real people.</h3>
@@ -634,8 +634,8 @@ var Privacy = React.createClass({
   render: function () {
     return(
       <Grid>
-        <div class="jumbotron">
-          <h2 class="big-text">Privacy</h2>
+        <div className="jumbotron">
+          <h2 className="big-text">Privacy</h2>
           <p>Free Code Camp is committed to respecting the privacy of visitors to our web sites and web applications. The guidelines below explain how we protect the privacy of visitors to FreeCodeCamp.com and its features.</p>
           <h3>Personally Identifiable Information</h3>
           <p>Free Code Camp protects the identity of visitors to FreeCodeCamp.com by limiting the collection of personally identifiable information.</p>

@@ -10,7 +10,8 @@ var React = require('react'),
     // # Components
     App = require('./App.jsx'),
     Bonfires = require('./bonfires'),
-    Nonprofits = require('./nonprofits');
+    Nonprofits = require('./nonprofits'),
+    Chat = require('./chat');
 
 var routes = (
   <Route
@@ -22,6 +23,11 @@ var routes = (
       name='bonfires'
       path='/bonfires/?:bonfires?'
       handler={ Bonfires } />
+
+    <Route
+      name='chat'
+      path='/chat'
+      handler={ Chat } />
 
     <Route
       name='nonprofits'
