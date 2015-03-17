@@ -22,8 +22,12 @@ actions
         actions.renderToUser(ctx);
       });
   });
+
 actions
   .setContext
+  .filter(function(ctx) {
+    return ctx.state.path.indexOf('/bonfire') === -1;
+  })
   .subscribe(function(ctx) {
     debug('set ctx');
     // store updating

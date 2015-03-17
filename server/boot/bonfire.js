@@ -11,7 +11,7 @@ var React = require('react'),
 
 module.exports = function(app) {
 
-  app.get('/bonfires/:bonfireName?', function(req, res, next) {
+  app.get('/*', function(req, res, next) {
     debug('path req', decodeURI(req.path));
     Router(decodeURI(req.path))
       .run(function(Handler, state) {
@@ -50,6 +50,7 @@ module.exports = function(app) {
         return ctx.res.send(markup);
       });
     });
+
   /* var router = app.loopback.Router();
   var Bonfire = app.models.bonfire;
   var User = app.models.user;

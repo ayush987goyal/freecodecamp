@@ -1,5 +1,6 @@
 var React = require('react'),
     bootStrap = require('react-bootstrap'),
+    Link = require('react-router').Link,
     Navbar = bootStrap.Navbar,
     Nav = bootStrap.Nav,
     NavItem = bootStrap.NavItem,
@@ -16,12 +17,12 @@ var NavBarComp = React.createClass({
   _renderBrand: function() {
     var fCClogo = 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg';
     return (
-      <a href='/'>
+      <Link to='/'>
         <img
           src={ fCClogo }
           alt='learn to code javascript at Free Code Camp logo'
           className='img-responsive nav-logo' />
-      </a>
+      </Link>
     );
   },
 
@@ -57,21 +58,21 @@ var NavBarComp = React.createClass({
           right={ true }
           eventKey={ 0 }
           className='hamburger-dropdown'>
-          <NavItem
+          <NavItemFCC
             eventKey={ 1 }
-            href='/Challenges'>
+            href='/challenges'>
             Challenges
-          </NavItem>
-          <NavItem
+          </NavItemFCC>
+          <NavItemFCC
             eventKey={ 1 }
-            href='Chat'>
+            to='chat'>
             Chat
-          </NavItem>
-          <NavItem
+          </NavItemFCC>
+          <NavItemFCC
             eventKey={ 2 }
-            href='/bonfires'>
+            to='bonfires'>
             Bonfires
-          </NavItem>
+          </NavItemFCC>
           { this._renderSignin() }
         </Nav>
       </Navbar>
