@@ -2,10 +2,8 @@
   "name": "nonprofit",
   "base": "PersistedModel",
   "properties": {
-    "name": {
-      "type": "string",
-      "unique": true
-    },
+    "name": "string",
+    "registeredNonprofit": true,
     "requestedDeliverables": "array",
     "existingUserbase": true,
     "acceptJavascript": true,
@@ -14,17 +12,14 @@
     "websiteLink": "string",
     "stakeholderName": "string",
     "stakeholderEmail": "string",
-    "organization": "string",
     "endUser": "string",
     "approvedDeliverables": "array",
-    "organizationDescription": "string",
     "projectDescription": "string",
     "logoUrl": "string",
     "imageUrl": "string",
     "interestedCampers": "array",
     "confirmedCampers": "array",
-    "estimatedHours": "string",
-    "lastContact": []
+    "estimatedHours": "string"
   },
   "validations": [],
   "acls": [],
