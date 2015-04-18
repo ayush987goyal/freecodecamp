@@ -235,7 +235,7 @@ exports.upvote = function(req, res, next) {
         return next(err);
       }
       user = user.pop();
-      user.progressTimestamps.push(Date.now());
+      user.progressTimestamps.push(+Date.now());
       user.save();
     });
     return res.send(story);
@@ -349,14 +349,24 @@ exports.storySubmission = function(req, res, next) {
     originalStoryAuthorEmail: req.user.email
   });
 
-    story.save(function(err) {
-        if (err) {
-            return res.status(500);
-        }
-        res.send(JSON.stringify({
-            storyLink: story.storyLink.replace(/\s/g, '-').toLowerCase()
-        }));
-    });
+  story.save(function(err) {
+      if (err) {
+          return res.status(500);
+      }
+      res.send(JSON.stringify({
+          storyLink: story.storyLink.replace(/\s/g, '-').toLowerCase()
+      }));
+  });
+
+  User.find({'_id': story.author.userId}, function(err, user) {
+    'use strict';
+    if (err) {
+      return next(err);
+    }
+    user = user.pop();
+    user.progressTimestamps.push(+Date.now());
+    user.save();
+  });
 };
 
 exports.commentSubmit = function(req, res, next) {

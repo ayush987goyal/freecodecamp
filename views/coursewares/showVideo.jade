@@ -57,3 +57,11 @@ block content
                     $('#complete-courseware-dialog').modal('show');
                 }
             });
+            $('#complete-courseware-dialog').on('keypress', function(e) {
+              if (e.ctrlKey && e.keyCode === 13) {
+                $('#next-courseware-button').click();
+              }
+            });
+
+
+}}

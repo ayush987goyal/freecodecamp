@@ -84,7 +84,7 @@ exports.completedFieldGuide = function (req, res, next) {
 
   var index = req.user.uncompletedFieldGuides.indexOf(fieldGuideId);
   if (index > -1) {
-    req.user.progressTimestamps.push(Date.now() || 0);
+    req.user.progressTimestamps.push(+Date.now() || 0);
     req.user.uncompletedFieldGuides.splice(index, 1);
   }
 

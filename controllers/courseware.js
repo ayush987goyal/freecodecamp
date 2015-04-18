@@ -7,7 +7,7 @@ var _ = require('lodash'),
     moment = require('moment');
 
 /**
- * Courseware controller
+ * Courseware controlle
  */
 
 exports.showAllCoursewares = function(req, res) {
@@ -40,7 +40,7 @@ exports.returnNextCourseware = function(req, res, next) {
   });
   req.user.save();
 
-  var uncompletedCoursewares = req.user.uncompletedCoursewares.shift();
+  var uncompletedCoursewares = R.head(req.user.uncompletedCoursewares);
 
 
   var displayedCoursewares = Courseware.find({'_id': uncompletedCoursewares});
@@ -57,7 +57,7 @@ exports.returnNextCourseware = function(req, res, next) {
       });
       return res.redirect('../challenges/learn-how-free-code-camp-works');
     }
-    nameString = courseware.name.toLowerCase().replace(/\s/g, '-');
+    var nameString = courseware.name.toLowerCase().replace(/\s/g, '-');
     return res.redirect('../challenges/' + nameString);
   });
 };
@@ -84,7 +84,7 @@ exports.returnIndividualCourseware = function(req, res, next) {
 
     // Redirect to full name if the user only entered a partial
     var dashedNameFull = courseware.name.toLowerCase().replace(/\s/g, '-');
-    if (dashedNameFull != dashedName) {
+    if (dashedNameFull !== dashedName) {
       return res.redirect('../challenges/' + dashedNameFull);
     }
 
@@ -256,7 +256,7 @@ exports.completedCourseware = function (req, res, next) {
     githubLink: null,
     verified: true
   });
-  var index = req.user.completedCoursewares.indexOf(coursewareHash);
+  var index = req.user.uncompletedCoursewares.indexOf(coursewareHash);
 
   if (index > -1) {
     req.user.progressTimestamps.push(Date.now() || 0);
@@ -298,7 +298,7 @@ exports.completedZiplineOrBasejump = function (req, res, next) {
       } else {
         var index = req.user.uncompletedCoursewares.indexOf(coursewareHash);
         if (index > -1) {
-          req.user.progressTimestamps.push(Date.now() || 0);
+          req.user.progressTimestamps.push(+Date.now() || 0);
           req.user.uncompletedCoursewares.splice(index, 1);
         }
         pairedWith = pairedWith.pop();
@@ -326,7 +326,7 @@ exports.completedZiplineOrBasejump = function (req, res, next) {
           }
           index = pairedWith.uncompletedCoursewares.indexOf(coursewareHash);
           if (index > -1) {
-            pairedWith.progressTimestamps.push(Date.now() || 0);
+            pairedWith.progressTimestamps.push(+Date.now() || 0);
             pairedWith.uncompletedCoursewares.splice(index, 1);
 
           }
@@ -365,7 +365,7 @@ exports.completedZiplineOrBasejump = function (req, res, next) {
 
     var index = req.user.uncompletedCoursewares.indexOf(coursewareHash);
     if (index > -1) {
-      req.user.progressTimestamps.push(Date.now() || 0);
+      req.user.progressTimestamps.push(+Date.now() || 0);
       req.user.uncompletedCoursewares.splice(index, 1);
     }
 
