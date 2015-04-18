@@ -131,6 +131,7 @@ var userSchema = new mongoose.Schema({
     ],
     completedFieldGuides: [],
     uncompletedFieldGuides: [],
+  challengesHash: {},
   currentStreak: {
     type: Number,
     default: 0

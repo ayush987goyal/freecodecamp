@@ -41,11 +41,11 @@ function migrateIt() {
       process.exit(0);
     }
     if (dones === 1) {
-      userModelMigration(done);
+      process.exit(0);
     }
   };
-  console.log('calling userModelAssurity');
-  userModelAssurity(done);
+  console.log('calling userModelMigration');
+  userModelMigration(done);
 }
 
 function userModelMigration(cb) {
@@ -56,9 +56,8 @@ function userModelMigration(cb) {
     .batchSize(20000).stream();
 
   stream.on('data', function (user) {
-    console.log(i++);
-    if (user.challengesHash) {
-      this.pause();
+    if (typeof user.challengesHash !== 'undefined') {
+      console.log('Doing work on %s', user.profile.username);
       user.needsMigration = false;
       var oldChallenges = Object.keys(user.challengesHash).filter(function (key) {
         if (user.challengesHash[key]) {
@@ -66,7 +65,6 @@ function userModelMigration(cb) {
         }
         return user.challengesHash[key];
       });
-
       newChallenges.forEach(function (challenge) {
         if (oldChallenges.indexOf(challenge.oldNumber) !== -1 && challenge.newId) {
           user.completedCoursewares.push({
@@ -87,15 +85,15 @@ function userModelMigration(cb) {
         bonfire.completedDate = bonfire.completedDate * 1000;
         user.progressTimestamps.push(bonfire.completedDate);
       });
-    }
 
-    var self = this;
+    }
+    this.pause();
     user.save(function (err) {
       if (err) {
         console.log('woops');
       }
-      self.resume();
-    });
+      this.resume();
+    }.bind(this));
   }).on('error', function (err) {
     console.log(err);
   }).on('close', function () {
