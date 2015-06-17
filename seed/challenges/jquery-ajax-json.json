@@ -4,6 +4,7 @@
   "challenges": [{
       "id": "bad87fee1348bd9acdd08826",
       "name": "Waypoint: Learn how Script Tags and Document Ready Work",
+      "dashedName": "waypoint-learn-how-script-tags-and-document-ready-work",
       "difficulty": 0.072,
       "description": [
         "We've simplified our Cat Photo App and removed our <code>style</code> element. Add a <code>script</code> element to your page and create a <code>$(document).ready</code> function within it.",
@@ -48,6 +49,7 @@
     {
       "id": "bad87fee1348bd9bedc08826",
       "name": "Waypoint: Target Elements by Selectors Using jQuery",
+      "dashedName": "waypoint-target-elements-by-selectors-using-jquery",
       "difficulty": 0.073,
       "description": [
         "Make all <code>img</code> elements bounce $('img').addClass('animated bounce')"
@@ -94,6 +96,7 @@
     {
       "id": "bad87fee1348bd9aedc08826",
       "name": "Waypoint: Target Elements by Class Using jQuery",
+      "dashedName": "waypoint-target-elements-by-class-using-jquery",
       "difficulty": 0.074,
       "description": [
 
@@ -140,6 +143,7 @@
     {
       "id": "bad87fee1348bd9aedb08826",
       "name": "Waypoint: Add an ID to an Element",
+      "dashedName": "waypoint-add-an-id-to-an-element",
       "difficulty": 0.075,
       "description": [
 
@@ -186,6 +190,7 @@
     {
       "id": "bad87fee1348bd9aeda08826",
       "name": "Waypoint: Target Elements by ID Using jQuery",
+      "dashedName": "waypoint-target-elements-by-id-using-jquery",
       "difficulty": 0.075,
       "description": [
 
@@ -233,6 +238,7 @@
     {
       "id": "bad87fee1348bd9aed908826",
       "name": "Waypoint: Change the CSS of an Element Using jQuery",
+      "dashedName": "waypoint-change-the-css-of-an-element-using-jquery",
       "difficulty": 0.076,
       "description": [
 
@@ -281,6 +287,7 @@
     {
       "id": "bad87fee1348bd9aed808826",
       "name": "Waypoint: Disable an Element Using jQuery",
+      "dashedName": "waypoint-disable-an-element-using-jquery",
       "difficulty": 0.077,
       "description": [
 
@@ -327,6 +334,7 @@
     {
       "id": "bad87fee1348bd9aed708826",
       "name": "Waypoint: Remove an Element Using jQuery",
+      "dashedName": "waypoint-remove-an-element-using-jquery",
       "difficulty": 0.078,
       "description": [
 
@@ -374,6 +382,7 @@
     {
       "id": "bad87fee1348bd9aed608826",
       "name": "Waypoint: Move an Element Using jQuery",
+      "dashedName": "waypoint-move-an-element-using-jquery",
       "difficulty": 0.079,
       "description": [
         "fccss",
@@ -421,6 +430,7 @@
     {
       "id": "bad87fee1348bd9aed508826",
       "name": "Waypoint: Clone an Element Using jQuery",
+      "dashedName": "waypoint-clone-an-element-using-jquery",
       "difficulty": 0.080,
       "description": [
 
@@ -437,6 +447,7 @@
     {
       "id": "bad87fee1348bd9aed308826",
       "name": "Waypoint: Target the Parent of an Element Using jQuery",
+      "dashedName": "waypoint-target-the-parent-of-an-element-using-jquery",
       "difficulty": 0.082,
       "description": [
 
@@ -453,6 +464,7 @@
     {
       "id": "bad87fee1348bd9aed208826",
       "name": "Waypoint: Target the Children of an Element Using jQuery",
+      "dashedName": "waypoint-target-the-children-of-an-element-using-jquery",
       "difficulty": 0.083,
       "description": [
 
@@ -470,6 +482,7 @@
     {
       "id": "bad87fee1348bd9aed108826",
       "name": "Waypoint: Target a Specific Child of an Element Using jQuery",
+      "dashedName": "waypoint-target-a-specific-child-of-an-element-using-jquery",
       "difficulty": 0.084,
       "description": [
 
@@ -486,6 +499,7 @@
     {
       "id": "bad87fee1348bd9aed008826",
       "name": "Waypoint: Target Even Numbered Elements Using jQuery",
+      "dashedName": "waypoint-target-even-numbered-elements-using-jquery",
       "difficulty": 0.085,
       "description": [
 
@@ -501,7 +515,8 @@
 
     {
       "id": "bad87fee1348bd9aecc08826",
-      "name": "Waypoint: Read Data from an Element Using jQuery",
+      "name": "waypoint-read-data-from-an-element-using-jquery",
+      "dashedName": "Waypoint: Read Data from an Element Using jQuery",
       "difficulty": 0.086,
       "description": [
 
@@ -517,7 +532,8 @@
 
     {
       "id": "bad87fee1348bd9aebc08826",
-      "name": "Waypoint: Get Data from an URL Using jQuery",
+      "name": "waypoint-get-data-from-an-url-using-jquery",
+      "dashedName": "Waypoint: Get Data from an URL Using jQuery",
       "difficulty": 0.087,
       "description": [
 
@@ -534,6 +550,7 @@
     {
       "id": "bad87fee1348bd9ae9c08826",
       "name": "Waypoint: Loop through JSON Data Using jQuery",
+      "dashedName": "waypoint-loop-through-json-data-using-jquery",
       "difficulty": 0.089,
       "description": [
 
@@ -550,6 +567,7 @@
     {
       "id": "bad87fee1348bd9ae8c08826",
       "name": "Waypoint: Setup Click Events Using jQuery",
+      "dashedName": "waypoint-setup-click-events-using-jquery",
       "difficulty": 0.089,
       "description": [
 
@@ -564,6 +582,7 @@
     }, {
       "id": "bad87fee1348bd9aede08826",
       "name": "Waypoint: Use Hex Codes for Precise Colors",
+      "dashedName": "waypoint-use-hex-codes-for-precise-colors",
       "difficulty": 0.071,
       "description": [
 
@@ -578,6 +597,7 @@
     }, {
       "id": "bad87fee1348bd9aedd08826",
       "name": "Waypoint: Use Shortened Hex Codes for Colors",
+      "dashedName": "waypoint-use-shortened-hex-codes-for-colors",
       "difficulty": 0.071,
       "description": [
 
