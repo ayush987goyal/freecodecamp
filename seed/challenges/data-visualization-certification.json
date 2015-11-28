@@ -1,0 +1,27 @@
+{
+  "name": "Claim Your Data Visualization Certificate",
+  "order": 20,
+  "time": "5m",
+  "challenges": [
+    {
+      "id": "590add8ccb81ac38a17513c4",
+      "title": "Placeholder",
+      "challengeSeed": [],
+      "description": [
+      ],
+      "type": "Waypoint",
+      "challengeType": 7,
+      "tests": [],
+      "nameCn": "",
+      "descriptionCn": [],
+      "nameFr": "",
+      "descriptionFr": [],
+      "nameRu": "",
+      "descriptionRu": [],
+      "nameEs": "",
+      "descriptionEs": [],
+      "namePt": "",
+      "descriptionPt": []
+    }
+  ]
+}

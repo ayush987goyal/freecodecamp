@@ -1,0 +1,27 @@
+{
+  "name": "User Interface Design",
+  "order": 14,
+  "time": "5h",
+  "challenges": [
+    {
+      "id": "540add8ccb81ac38a17513c4",
+      "title": "Placeholder",
+      "challengeSeed": [],
+      "description": [
+      ],
+      "type": "Waypoint",
+      "challengeType": 7,
+      "tests": [],
+      "nameCn": "",
+      "descriptionCn": [],
+      "nameFr": "",
+      "descriptionFr": [],
+      "nameRu": "",
+      "descriptionRu": [],
+      "nameEs": "",
+      "descriptionEs": [],
+      "namePt": "",
+      "descriptionPt": []
+    }
+  ]
+}

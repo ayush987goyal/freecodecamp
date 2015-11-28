@@ -1,6 +1,6 @@
 {
   "name": "Basic Front End Development Projects",
-  "order": 9,
+  "order": 10,
   "time": "100h",
   "challenges": [
     {
@@ -80,7 +80,7 @@
           "Guarda tu proyecto con el botón \"Save\". Luego pulsa el botón de \"Fork\". Esto crea una bifurcación (copia) de tu proyecto con la que puedes experimentar.",
           ""
         ]
-        
+
         ],
       "namePt": "",
       "descriptionPt": []

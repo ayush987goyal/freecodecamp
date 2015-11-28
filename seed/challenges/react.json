@@ -1,0 +1,27 @@
+{
+  "name": "React",
+  "order": 17,
+  "time": "5h",
+  "challenges": [
+    {
+      "id": "510add8ccb81ac38a17513c4",
+      "title": "Placeholder",
+      "challengeSeed": [],
+      "description": [
+      ],
+      "type": "Waypoint",
+      "challengeType": 7,
+      "tests": [],
+      "nameCn": "",
+      "descriptionCn": [],
+      "nameFr": "",
+      "descriptionFr": [],
+      "nameRu": "",
+      "descriptionRu": [],
+      "nameEs": "",
+      "descriptionEs": [],
+      "namePt": "",
+      "descriptionPt": []
+    }
+  ]
+}
