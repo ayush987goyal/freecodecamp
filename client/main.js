@@ -181,8 +181,6 @@ function setMapShare(id) {
 }
 
 $(document).ready(function() {
-
-
   var challengeName = typeof challengeName !== 'undefined' ?
     challengeName :
     '';

@@ -15,6 +15,7 @@ module.exports = function(app) {
   var Challenge = app.models.Challenge;
   var Story = app.models.Story;
   var Nonprofit = app.models.Nonprofit;
+  var ShortenedUrl = app.models.ShortenedUrl;
 
   router.get('/api/github', githubCalls);
   router.get('/api/blogger', bloggerCalls);
@@ -37,6 +38,8 @@ module.exports = function(app) {
   router.get('/all-stories', showAllTestimonials);
   router.get('/links', showLinks);
   router.get('/the-fastest-web-page-on-the-internet', theFastestWebPageOnTheInternet);
+  router.get('/c/:hex', findFromShortenedUrl);
+  router.get('/shortenUrl/:url', shortenUrl);
 
   app.use(router);
 
@@ -179,6 +182,32 @@ module.exports = function(app) {
         });
       }
     );
+  }
+
+  function findFromShortenedUrl(req, res, next) {
+    const hex = req.params.hex.toLowerCase().slice(16, 24);
+    const { path } = req;
+    ShortenedUrl.findOne(
+      {
+          where: { id:  {regexp: new RegExp(hex + '$') } }
+      },
+      function(err, shortenedUrl) {
+        if (err) {
+          return next(err);
+        }
+        console.log(shortenedUrl);
+        if (!shortenedUrl) {
+          req.flash('errors', {
+            msg: `404: We couldn't find path ${ path }`
+          });
+          return res.redirect('/');
+        }
+        res.redirect(shortenedUrl.path);
+      }
+    );
+  }
+
+  function shortenUrl(req, res, next) {
   }
 
   function chat(req, res) {
