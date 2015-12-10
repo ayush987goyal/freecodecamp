@@ -8,9 +8,9 @@ block content
                             img.gif-block.img-center.img-responsive.thumbnail(src='#{step[0]}' alt='#{step[1]}')
                         .caption
                             p.large-p!= step[2]
-                        .challenge-button-block
+                        .challenge-button-block.text-center
                             if step[3]
-                                a.btn.btn-block.btn-primary.challenge-step-btn-action(id='#{index}' href='#{step[3]}' target='_blank') Open link in new tab
+                                a.btn.btn-block.btn-primary.challenge-step-btn-action(id='#{index}' href='#{step[3]}' target='_blank') Open link in new tab (unlocks next step)
                                 .button-spacer
                             if index === 0
                                 .col-sm-5.hidden-xs &nbsp;
@@ -21,6 +21,8 @@ block content
                                 .btn.btn-primary.col-sm-5.col-xs-12.challenge-step-btn-finish(id='last' class=step[3] ? 'disabled' : '') Finish challenge
                             else
                                 .btn.btn-primary.col-sm-5.col-xs-12.challenge-step-btn-next(id='#{index}' class=step[3] ? 'disabled' : '') Go to my next step
+                                if step[3]
+                                  a.use-pointer.challenge-step-btn-next(id='#{index}') Skip this step
                         .clearfix
     #challenge-step-modal.modal(tabindex='-1')
         .modal-dialog.animated.fadeIn.fast-animation
