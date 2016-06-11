@@ -1,0 +1,19 @@
+{
+  "name": "Applied Visual Design",
+  "order": 3,
+  "isComingSoon": true,
+  "time": "5 hours",
+  "helpRoom": "HelpFrontEnd",
+  "challenges": [
+    {
+      "id": "bd1158d8c423ede2aeb5bdee",
+      "title": "Applied Visual Design Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3,
+      "titleEs": ""
+    }
+  ]
+}

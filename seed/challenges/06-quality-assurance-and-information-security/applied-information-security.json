@@ -1,0 +1,19 @@
+{
+  "name": "Applied Information Security",
+  "order": 3,
+  "time": "5 hours",
+  "isComingSoon": true,
+  "helpRoom": "HelpBackEnd",
+  "challenges": [
+    {
+      "id": "bd7158d8c423ede2abb5bdee",
+      "title": "Applied Information Security Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3,
+      "titleEs": ""
+    }
+  ]
+}

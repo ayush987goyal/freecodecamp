@@ -1,0 +1,19 @@
+{
+  "name": "Applied User Experience Design",
+  "order": 4,
+  "isComingSoon": true,
+  "time": "5 hours",
+  "helpRoom": "HelpFrontEnd",
+  "challenges": [
+    {
+      "id": "bd7158d8c423ede2aeb5bdee",
+      "title": "Applied User Experience Design Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3,
+      "titleEs": ""
+    }
+  ]
+}

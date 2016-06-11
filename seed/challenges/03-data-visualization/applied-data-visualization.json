@@ -1,0 +1,19 @@
+{
+  "name": "Applied Data Visualization",
+  "order": 4,
+  "isComingSoon": true,
+  "time": "5 hours",
+  "helpRoom": "HelpDataViz",
+  "challenges": [
+    {
+      "id": "cc7158d8c423ede2aab5bdee",
+      "title": "Learn Applied Data Visualization Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3,
+      "titleEs": ""
+    }
+  ]
+}

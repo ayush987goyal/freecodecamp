@@ -1,0 +1,19 @@
+{
+  "name": "Redux",
+  "order": 2,
+  "isComingSoon": true,
+  "time": "5 hours",
+  "helpRoom": "HelpDataViz",
+  "challenges": [
+    {
+      "id": "bd8158d8c423ede3aeb5bdee",
+      "title": "Learn Redux Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3,
+      "titleEs": "Desafios para aprender Redux"
+    }
+  ]
+}

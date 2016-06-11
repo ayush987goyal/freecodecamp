@@ -1,0 +1,19 @@
+{
+  "name": "Applied Quality Assurance",
+  "order": 2,
+  "time": "5 hours",
+  "isComingSoon": true,
+  "helpRoom": "HelpBackEnd",
+  "challenges": [
+    {
+      "id": "bd7158d8c423ede2acb5bdee",
+      "title": "Applied Quality Assurance Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3,
+      "titleEs": ""
+    }
+  ]
+}
