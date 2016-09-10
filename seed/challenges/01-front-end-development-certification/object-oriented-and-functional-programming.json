@@ -34,7 +34,7 @@
         "};"
       ],
       "tail": [
-        "(function() {return JSON.stringify(motorBike);})();"
+        "console.log(JSON.stringify(motorBike));"
       ],
       "solutions": [
         "var car = {\n  \"wheels\":4,\n  \"engines\":1,\n  \"seats\":5\n};\n\nvar motorBike = {\n  \"wheels\": 4,\n  \"engines\": 1,\n  \"seats\": 2\n};"
@@ -84,7 +84,7 @@
         "};"
       ],
       "tail": [
-        "(function() {return JSON.stringify(new MotorBike());})();"
+        "console.log(JSON.stringify(new MotorBike()));"
       ],
       "solutions": [
         "var Car = function() {\n  this.wheels = 4;\n  this.engines = 1;\n  this.seats = 5;\n};\n\nvar myCar = new Car();\n\nvar MotorBike = function() {\n  this.engines = 1;\n  this.seats = 1;\n  this.wheels = 4;\n};\n\nvar myMotorBike = new MotorBike();"
@@ -145,7 +145,7 @@
         "var myCar;"
       ],
       "tail": [
-        "(function() {return JSON.stringify(myCar);})();"
+        "console.log(JSON.stringify(myCar));"
       ],
       "solutions": [
         "var Car = function() {\n  this.wheels = 4;\n  this.engines = 1;\n  this.seats = 5;\n};\n\nvar myCar = new Car();\n\nmyCar.nickname = \"Lucy\";"
@@ -207,7 +207,7 @@
         "var myCar;"
       ],
       "tail": [
-        "(function() {return JSON.stringify(myCar);})();"
+        "console.log(JSON.stringify(myCar));"
       ],
       "solutions": [
         "var Car = function(wheels,seats,engines) {\n  this.wheels = wheels;\n  this.seats = seats;\n  this.engines = engines;\n};\n\nvar myCar = new Car(4,1,1);"
@@ -289,7 +289,7 @@
         "var myBike = new Bike();"
       ],
       "tail": [
-        "if(myBike.hasOwnProperty('getGear')){(function() {return JSON.stringify(myBike.getGear());})();}"
+        "if(myBike.hasOwnProperty('getGear')){(function() {console.log(JSON.stringify(myBike.getGear()));})();}"
       ],
       "solutions": [
         "var Car = function() {\n  var speed = 10;\n\n  this.accelerate = function(change) {\n    speed += change;\n  };\n\n  this.decelerate = function() {\n    speed -= 5;\n  };\n\n  this.getSpeed = function() {\n    return speed;\n  };\n};\n\nvar Bike = function() {\n  var gear = 1;\n  \n  this.getGear = function() {\n    return gear;\n  };\n  \n  this.setGear = function(newGear) {\n    gear = newGear;\n  };\n};\n\nvar myCar = new Car();\n\nvar myBike = new Bike();"
@@ -338,7 +338,7 @@
         "var newArray = oldArray;"
       ],
       "tail": [
-        "(function() {return newArray;})();"
+        "console.log(newArray);"
       ],
       "solutions": [
         "var oldArray = [1,2,3,4,5];\nvar newArray = oldArray.map(function(val){\n  return val + 3;\n});"
@@ -387,7 +387,7 @@
         "singleVal = array;"
       ],
       "tail": [
-        "(function() {return singleVal;})();"
+        "console.log(singleVal);"
       ],
       "solutions": [
         "var array = [4,5,6,7,8];\nvar singleVal = 0;\nsingleVal = array.reduce(function(previousVal, currentVal) {\n  return previousVal + currentVal;\n}, 0);"
@@ -434,7 +434,7 @@
         "var newArray = oldArray;"
       ],
       "tail": [
-        "(function() {return newArray;})();"
+        "console.log(newArray);"
       ],
       "solutions": [
         "var oldArray = [1,2,3,4,5,6,7,8,9,10];\nvar newArray = oldArray.filter(function(val) {\n  return val < 6;\n});"
@@ -485,7 +485,7 @@
         "array.sort();"
       ],
       "tail": [
-        "(function() {return array;})();"
+        "console.log(array);"
       ],
       "solutions": [
         "var array = [1, 12, 21, 2];\narray.sort(function(a, b) {\n  return b - a;\n});"
@@ -533,7 +533,7 @@
         "newArray = array;"
       ],
       "tail": [
-        "(function() {return newArray;})();"
+        "console.log(newArray);"
       ],
       "solutions": [
         "var array = [1,2,3,4,5,6,7];\nvar newArray = [];\nnewArray = array.reverse();"
@@ -583,7 +583,7 @@
         "newArray = oldArray;"
       ],
       "tail": [
-        "(function() {return newArray;})();"
+        "console.log(newArray);"
       ],
       "solutions": [
         "var oldArray = [1,2,3];\nvar newArray = [];\nvar concatMe = [4,5,6];\nnewArray = oldArray.concat(concatMe);"
@@ -627,7 +627,7 @@
         "array = string;"
       ],
       "tail": [
-        "(function() {return array;})();"
+        "console.log(array);"
       ],
       "solutions": [
         "var string = \"Split me into an array\";\nvar array = [];\narray = string.split(\" \");"
@@ -669,7 +669,7 @@
         "joinedString = joinMe;"
       ],
       "tail": [
-        "(function() {return joinedString;})();"
+        "console.log(joinedString);"
       ],
       "solutions": [
         "var joinMe = [\"Split\",\"me\",\"into\",\"an\",\"array\"];\nvar joinedString = '';\njoinedString = joinMe.join(\" \");"
